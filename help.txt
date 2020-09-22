@@ -1,0 +1,43 @@
+Help On Mouse's Example on resource DLLs.
+
+Make sure you have VB6!
+the reason why this is made possible is because of the excellent resource editor
+that comes with VB6.
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+dont know how to use the VB6 resource editor? ill quickly tell you:
+
+1) Load up your VB6 compiler.
+2) Goto the "Add-Ins" menu item (Click it)
+3) Goto the "Add-In Manager..." (Click that too)
+4) In the listview box: Find the line named "VB 6 Resource Editor"
+	(when you click on it the description will say "Visual Basic 6 Resource Editor")
+5) Once you find it, HI-LIGHT it by clicking on it ONCE.
+6) Check the box "Load\Unloaded"
+7) Check the box "Load on startup"
+8) Restart your VB6 compiler
+9) Now you should see a new icon at the top of you compiler
+	(It looks like a hand grabbing a green cube off of a pile of green cubes)
+	That is your resource editor!
+
+10) Click on it.
+11) the rest is up to you.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+"App" directory has the source to the app that links to the VbRes.DLL.
+"Resource DLL" directory has the source to the DLL that has the resources in it.
+"VbResApp.exe" is the compiled app that links to the VbRes.DLL.
+"VbRes.DLL" is the Resource DLL that the app links to.
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+The dll is an "ACTIVE X" dll... BUT you do NOT have to register it if you are only
+going to use it as a resource library!! pretty sweet!
+
+You may do the same for EXE files and OCX files! anything that has a resource section
+is a potentual resouce library!
+
+Have Fun!
+-mouse
+mouse@theblackhand.net
+http://www.theblackhand.net 
